@@ -2200,6 +2200,12 @@ status_t AudioHardware::AudioStreamOutMSM72xx::getRenderPosition(uint32_t *dspFr
     return INVALID_OPERATION;
 }
 
+status_t AudioHardware::AudioStreamOutMSM72xx::getPresentationPosition(uint64_t *frames, struct timespec *timestamp)
+{
+    //TODO: enable when supported by driver
+    return INVALID_OPERATION;
+}
+
 #ifdef QCOM_VOIP_ENABLED
 AudioHardware::AudioStreamOutDirect::AudioStreamOutDirect() :
     mHardware(0), mFd(-1), mStartCount(0), mRetryCount(0), mStandby(true), mDevices(0),mChannels(AUDIO_CHANNEL_OUT_MONO),
@@ -2483,6 +2489,12 @@ status_t AudioHardware::AudioStreamOutDirect::getRenderPosition(uint32_t *dspFra
 #endif /*QCOM_VOIP_ENABLED*/
 
 // End AudioStreamOutDirect
+
+status_t AudioHardware::AudioStreamOutDirect::getPresentationPosition(uint64_t *frames, struct timespec *timestamp)
+{
+    //TODO: enable when supported by driver
+    return INVALID_OPERATION;
+}
 
 //.----------------------------------------------------------------------------
 int AudioHardware::AudioStreamInMSM72xx::InstanceCount = 0;
@@ -3485,6 +3497,11 @@ status_t AudioHardware::AudioSessionOutLPA::getRenderPosition(uint32_t *dspFrame
     return INVALID_OPERATION;
 }
 
+status_t AudioHardware::AudioSessionOutLPA::getPresentationPosition(uint64_t *frames, struct timespec *timestamp)
+{
+    //TODO: enable when supported by driver
+    return INVALID_OPERATION;
+}
 
 status_t AudioHardware::AudioSessionOutLPA::getBufferInfo(buf_info **buf) {
 
