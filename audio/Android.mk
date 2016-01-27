@@ -14,7 +14,7 @@ ifeq ($(strip $(NEW_INPUT_AUDIO_HAL)),true)
     common_cflags += -DNEW_INPUT_AUDIO_HAL
 endif
 
-ifeq ($(strip $(QCOM_FM_ENABLED)),true)
+ifeq ($(strip $(AUDIO_FEATURE_ENABLED_FM)),true)
     common_cflags += -DQCOM_FM_ENABLED
 endif
 
