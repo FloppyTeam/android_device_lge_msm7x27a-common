@@ -83,6 +83,7 @@ LOCAL_ADDITIONAL_DEPENDENCIES := $(TARGET_OUT_INTERMEDIATES)/KERNEL_OBJ/usr
 
 include $(BUILD_SHARED_LIBRARY)
 
+ifeq ($(USE_LEGACY_AUDIO_POLICY), 1)
 # The audio policy is implemented on top of legacy policy code
 include $(CLEAR_VARS)
 
@@ -113,3 +114,4 @@ LOCAL_ADDITIONAL_DEPENDENCIES := $(TARGET_OUT_INTERMEDIATES)/KERNEL_OBJ/usr
 
 include $(BUILD_SHARED_LIBRARY)
 
+endif
