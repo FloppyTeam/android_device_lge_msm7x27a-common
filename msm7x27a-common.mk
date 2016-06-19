@@ -132,6 +132,14 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     libbt-vendor
 
+# WiFi
+PRODUCT_PACKAGES += \
+    libwpa_client \
+    hostapd \
+    dhcpcd.conf \
+    wpa_supplicant \
+    wpa_supplicant.conf
+
 # For userdebug builds
 ifeq ($(TARGET_BUILD_VARIANT),userdebug)
 ADDITIONAL_DEFAULT_PROPERTIES += \
