@@ -214,3 +214,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     audio.offload.disable="1" \
     af.resampler.quality="4"
+
+# Force Camera Portability API, since newer camera API isn't supported.
+PRODUCT_PROPERTY_OVERRIDES += \
+    camera2.portability.force_api="1"
