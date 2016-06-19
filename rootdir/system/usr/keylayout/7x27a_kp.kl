@@ -13,6 +13,6 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-key 172   HOME             WAKE
+key 172   HOME
 key 115   VOLUME_UP
 key 114   VOLUME_DOWN
