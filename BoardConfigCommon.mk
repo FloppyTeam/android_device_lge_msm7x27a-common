@@ -137,3 +137,16 @@ WIFI_DRIVER_FW_PATH_STA          := "sta"
 WIFI_DRIVER_FW_PATH_AP           := "ap"
 WIFI_DRIVER_FW_PATH_P2P          := "p2p"
 WIFI_DRIVER_FW_PATH_PARAM        := "/data/misc/wifi/fwpath"
+
+# Enable Minikin text layout engine (will be the default soon)
+USE_MINIKIN := true
+
+# Use dlmalloc instead of jemalloc for mallocs on low-ram targets
+MALLOC_IMPL := dlmalloc
+
+# Enable dex-preoptimization to speed up first boot sequence
+WITH_DEXPREOPT := true
+DONT_DEXPREOPT_PREBUILTS := true
+
+# Include an expanded selection of fonts
+EXTENDED_FONT_FOOTPRINT := true
