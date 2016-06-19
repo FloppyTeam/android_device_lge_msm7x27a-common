@@ -157,3 +157,6 @@ EXTENDED_FONT_FOOTPRINT := true
 
 # BIONIC: use legacy mmap
 BOARD_USES_LEGACY_MMAP := true
+
+# Charger
+BOARD_CHARGER_SHOW_PERCENTAGE := true
