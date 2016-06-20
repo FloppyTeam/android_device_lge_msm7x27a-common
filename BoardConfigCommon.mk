@@ -149,3 +149,14 @@ WIFI_DRIVER_FW_PATH_STA          := "sta"
 WIFI_DRIVER_FW_PATH_AP           := "ap"
 WIFI_DRIVER_FW_PATH_P2P          := "p2p"
 WIFI_DRIVER_FW_PATH_PARAM        := "/data/misc/wifi/fwpath"
+
+# Webkit
+PRODUCT_PACKAGES += \
+    libwebcore  
+
+ENABLE_WEBGL := true
+PRODUCT_PREBUILT_WEBVIEWCHROMIUM := yes
+TARGET_ARCH_LOWMEM := true
+TARGET_WEBKIT_USE_MORE_MEMORY  := true
+TARGET_FORCE_CPU_UPLOAD  := true
+TARGET_USES_JELLYBEAN_BASEBAND := true
