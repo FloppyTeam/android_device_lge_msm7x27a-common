@@ -285,7 +285,7 @@ service rmt_storage /system/bin/rmt_storage
     disabled
 
 service sensord /system/bin/sensord
-    class core
+    class main
     oneshot
 
 # WLAN
@@ -350,12 +350,12 @@ service iprenew_bt-pan /system/bin/dhcpcd -n
     oneshot
 
 service qmuxd /system/bin/qmuxd
-    class core
+    class main
     user radio
     group radio audio bluetooth gps qcom_diag
 
 service netmgrd /system/bin/netmgrd
-    class core
+    class main
 
 service charger /charger
     class charger
