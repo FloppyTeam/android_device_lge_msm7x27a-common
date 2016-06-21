@@ -160,3 +160,9 @@ TARGET_ARCH_LOWMEM := true
 TARGET_WEBKIT_USE_MORE_MEMORY  := true
 TARGET_FORCE_CPU_UPLOAD  := true
 TARGET_USES_JELLYBEAN_BASEBAND := true
+
+# Add h/w acceleration in browser
+WITH_JIT := true
+ENABLE_JSC_JIT := true
+JS_ENGINE := v8
+HTTP := chrome
