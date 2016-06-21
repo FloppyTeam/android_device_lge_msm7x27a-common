@@ -166,3 +166,5 @@ WITH_JIT := true
 ENABLE_JSC_JIT := true
 JS_ENGINE := v8
 HTTP := chrome
+
+HWUI_COMPILE_FOR_PERF := true
