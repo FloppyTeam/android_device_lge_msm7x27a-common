@@ -109,4 +109,8 @@
 
     <!-- Whether to enable auto provisioning the app for new SIM card on boot.-->
     <bool name="config_auto_provision_enable">true</bool>
+    
+    <!-- Base "touch slop" value used by ViewConfiguration as a
+    movement threshold where scrolling should begin. -->
+    <dimen name="config_viewConfigurationTouchSlop">4dp</dimen>
 </resources>
