@@ -53,6 +53,7 @@ TARGET_CPU_ABI := armeabi-v7a
 TARGET_CPU_ABI2 := armeabi
 TARGET_CPU_VARIANT := cortex-a5
 TARGET_USE_QCOM_BIONIC_OPTIMIZATION := true
+ARCH_ARM_HAVE_TLS_REGISTER := true
 
 # Kernel
 TARGET_KERNEL_SOURCE := kernel/lge/msm7x27a-common
@@ -63,6 +64,12 @@ BOARD_KERNEL_PAGESIZE := 4096
 # Partitions
 BOARD_FLASH_BLOCK_SIZE := 131072
 TARGET_USERIMAGES_USE_EXT4 := true
+
+# cflags
+COMMON_GLOBAL_CFLAGS += -DUSE_MDP3
+COMMON_GLOBAL_CFLAGS += -DLPA_DEFAULT_BUFFER_SIZE=48
+TARGET_GLOBAL_CFLAGS += -mfloat-abi=softfp -mfpu=neon -mtune=cortex-a5
+TARGET_GLOBAL_CPPFLAGS += -mfloat-abi=softfp -mfpu=neon -mtune=cortex-a5
 
 # QCOM Display Stuff
 BOARD_USES_QCOM_HARDWARE := true
